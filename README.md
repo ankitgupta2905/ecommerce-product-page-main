@@ -27,10 +27,13 @@ Users should be able to:
 - View the cart and remove items from it
 
 ### Screenshot
+-Desktop
 
 ![](./images/screenshot-desktop.png)
 
-![](./images/screenshot_mobile.png)
+-Mobile
+
+![](./images/Screenshot_mobile.png)
 
 
 ### Links
