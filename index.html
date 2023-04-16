@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body class="ff-kumb-sans">
+  <!-- header start -->
+  <header class="flex header">
+    <div class="flex nav-section">
+      <div class="btns">
+        <div><img class="menu-btn" src="./images/icon-menu.svg" alt=""></div>
+        <div><img class="close-btn" src="./images/icon-close.svg" alt=""></div>
+      </div>
+      <div><img src="./images/logo.svg" alt=""></div>
+      <nav class="">
+        <ul class="flex fc-dark-grayish-blue nav-lists">
+          <li><a href="" class="list fc-dark-grayish-blue ff-kumb-sans fs-300">Collections</a></li>
+          <li><a href="" class="list fc-dark-grayish-blue ff-kumb-sans fs-300">Men</a></li>
+          <li><a href="" class="list fc-dark-grayish-blue ff-kumb-sans fs-300">Women</a></li>
+          <li><a href="" class="list fc-dark-grayish-blue ff-kumb-sans fs-300">About</a></li>
+          <li><a href="" class="list fc-dark-grayish-blue ff-kumb-sans fs-300">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="flex cart-section">
+      <div class="cart">
+        <div class="cart-btn"><img src="./images/icon-cart.svg" alt=""></div>
+        <span id="product-quantity">1</span>
+      </div>
+      <div class="profile flex">
+        <img src="./images/image-avatar.png" alt="">
+      </div>
+    </div>
+    <!-- pop up cart box -->
+    <div class="showcart">
+      <div class="empty-cart">
+        <p class="cart fs-500">Cart</p>
+        <hr>
+        <p class="fc-dark-grayish-blue card-details flex">Your card is empty</p>
+      </div>
+      <div class="cart-items">
+        <p class="cart fs-500">Cart</p>
+        <hr>
+        <div class="amount-details">
+          <div class="flex amount">
+            <div class="price-image">
+              <img src="./images/image-product-1-thumbnail.jpg" alt="">
+            </div>
+            <article>
+              <p>Fall Limited Edition Sneaker</p>
+              <p class="price fc-dark-grayish-blue">$125.00 x <span class="total-price fc-black"></span></p>
+            </article>
+            <div class="delete-btn">
+              <img src="./images/icon-delete.svg" alt="">
+            </div>
+          </div>
+          <div>
+            <button class="checkout-btn bg-orange"><a class="fc-white" href="">Checkout</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="added">
+      <p>Added to cart</p>
+    </div>
+    <div class="removed">
+      <p>Cart is empty</p>
+    </div>
+
+  </header>
+  <!-- header ends -->
+  <main class="grid">
+    <!-- img galery starts -->
+    <section class="section-one">
+      <div class="product-img">
+        <img src="./images/image-product-1.jpg" alt="">
+      </div>
+      <div class="manual-imgs flex">
+        <div class="manual-img"><img src="./images/image-product-1-thumbnail.jpg" alt=""></div>
+        <div class="manual-img"><img src="./images/image-product-2-thumbnail.jpg" alt=""></div>
+        <div class="manual-img"><img src="./images/image-product-3-thumbnail.jpg" alt=""></div>
+        <div class="manual-img"><img src="./images/image-product-4-thumbnail.jpg" alt=""></div>
+      </div>
+    </section>
+    <section class="mobile-section">
+      <div class="container">
+
+        <div class="slider">
+          <img src="./images/image-product-1.jpg" alt="">
+        </div>
+
+        <div class="slider">
+          <img src="./images/image-product-2.jpg" alt="">
+        </div>
+
+        <div class="slider">
+          <img src="./images/image-product-3.jpg" alt="">
+        </div>
+
+        <div class="slider">
+          <img src="./images/image-product-4.jpg" alt="">
+        </div>
+
+        <span class="arrow prev flex" onclick="imgslide(-1)"><img src="./images/icon-previous.svg" alt=""></span>
+        <span class="arrow next flex" onclick="imgslide(1)"><img src="./images/icon-next.svg" alt=""></span>
+
+      </div>
+    </section>
+    <section class="desktop-section flex">
+      <div class="cross-img flex"><img src="./images/icon-close.svg" alt=""></div>
+      <div class="container">
+
+        <div class="desk-slider">
+          <img src="./images/image-product-1.jpg" alt="">
+        </div>
+
+        <div class="desk-slider">
+          <img src="./images/image-product-2.jpg" alt="">
+        </div>
+
+        <div class="desk-slider">
+          <img src="./images/image-product-3.jpg" alt="">
+        </div>
+
+        <div class="desk-slider">
+          <img src="./images/image-product-4.jpg" alt="">
+        </div>
+
+        <span class="desk-arrow desk-prev flex" onclick="imgslide(-1)"><img src="./images/icon-previous.svg"
+            alt=""></span>
+        <span class="desk-arrow desk-next flex" onclick="imgslide(1)"><img src="./images/icon-next.svg" alt=""></span>
+
+      </div>
+    </section>
+    <!-- img-galary ends -->
+    <!--  product details starts -->
+    <section class="section-two flex ff-kumb-sans">
+      <h3 class="fc-orange fs-600">Sneaker Company</h3>
+      <h1 class="fc-black fs-800">Fall Limited Edition Sneakers</h1>
+      <p class="fc-dark-grayish-blue discription">These low-profile sneakers are your perfect casual wear companion.
+        Featuring a
+        durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+      <div class="price flex">
+        <div class="flex price">
+          <h2 class="fc-black fs-600"> $125.00</h2>
+          <h3 class="fc-orange bg-pale-orange fs-400">50%</h3>
+        </div>
+        <div>
+          <h4 class="fs-500 fc-grayish-blue">$250.00</h4>
+        </div>
+      </div>
+      <!-- purchase details starts-->
+      <div class="purchase flex">
+        <div class="quantity bg-light-grayish-blue">
+          <input type="text" class="input-box" value="0">
+          <div class="minus-btn"><img src="./images/icon-minus.svg" alt=""></div>
+          <div class="plus-btn"><img src="./images/icon-plus.svg" alt=""></div>
+        </div>
+        <div class="add-to-cart">
+          <div class="add-btn bg-orange fc-white flex">
+            <img src="./images/icon-cart-white.svg" alt="">
+            <p>Add to cart</p>
+          </div>
+        </div>
+        <!-- purchase detials ends-->
+    </section>
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Ankit</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
