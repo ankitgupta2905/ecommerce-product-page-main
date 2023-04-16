@@ -8,8 +8,7 @@ This is a solution to the [E-commerce product page challenge on Frontend Mentor]
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
-  - [Author](#author)
-  - [Acknowledgments](#acknowledgments)
+  - [Built with](#built-with)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
@@ -38,8 +37,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution Url ](https://your-solution-url.com)
-- Live Site URL: [Live Demo](https://your-live-site-url.com)
+- Solution URL: [Solution Url ](https://github.com/ankitgupta2905/ecommerce-product-page-main)
+- Live Site URL: [Live Demo](https://ecommerce-product-page-main.kaafir.repl.co/)
 
 ### Built with
 
